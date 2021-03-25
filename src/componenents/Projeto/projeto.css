@@ -1,0 +1,57 @@
+.projeto{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 250px;
+    max-width: 250px;
+    height: 150px;
+    margin: 15px;
+    
+    
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.164);
+}
+
+.projeto .name{
+    display: flex;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.795);
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    font-size: 20px;
+    font-weight: 100;
+    backdrop-filter: blur(4px);
+  
+}
+
+
+
+.descricao{
+    position: absolute;
+    z-index: 10;
+    top: 750px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.973);
+    visibility: hidden;
+
+    transition: all 100ms;
+    transform: scale(0);
+    
+
+    
+}
+
+.descricao-open{
+    visibility: visible;
+    transition: all 100ms;
+    transform: scale(1)
+
+}

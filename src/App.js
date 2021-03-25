@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './global.css'
+import Header from './componenents/Header/header'
+import Main from './componenents/Main/main'
+import Projetos from './componenents/Projetos/projetos'
+import Contato from './componenents/Contato/contato'
+
+import React, { useRef } from 'react'
 
 function App() {
+
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+  const refProjetos = useRef(null)
+  const refCont = useRef(null)
+  const refHome = useRef(null)
+  const refSobre = useRef(null)
+  const ScrollProj = () => scrollToRef(refProjetos)
+  const ScrollCont = () => scrollToRef(refCont)
+  const ScrollHome = () => scrollToRef(refHome)
+  const ScrollSobre = () => scrollToRef(refSobre)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Header ScrollProj={ScrollProj} ScrollCont={ScrollCont} ScrollHome={ScrollHome} ScrollSobre={ScrollSobre} ></Header>
+
+      <div className='page' ref={refHome}>
+        <Main></Main>
+      </div>
+
+      <div className='page' ref={refProjetos}>
+        <Projetos />
+      </div>
+
+      <div className='page' ref={refCont}>
+        <Contato></Contato>
+      </div>
+
+      <div className='page' ref={refSobre}>
+        
+      </div>
+
     </div>
   );
 }
