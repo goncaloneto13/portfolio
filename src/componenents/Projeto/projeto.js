@@ -2,23 +2,30 @@
 import { useState } from 'react'
 import './projeto.css'
 
-export default function Projeto({name,fig}){
+export default function Projeto({setProjeto,name,fig}){
 
     const [descOpen,setDescOpen] = useState(false)
 
+    function showProjeto(){
+        setDescOpen(true)
+        setProjeto({name: name, fig:fig})
+    }
+
     return(
      <>
-        <div className='projeto' onClick={() => setDescOpen(true)}>
+        <div className='projeto' onClick={showProjeto}>
             <img src={fig}></img>
             <div className='name'>{name}</div>
 
         </div>
-
-        <div className={`descricao ${ descOpen? 'descricao-open' : '' }`}>
-            <button type='button' onClick={() => setDescOpen(false)}>close</button>
-            <h1>{name}</h1>
-            <img src={fig}></img>
-        </div>
+        
+       
     </>
     )
 }
+
+//<div className={`descricao ${ descOpen? 'descricao-open' : '' }`}>
+      
+//<h1>{name}</h1>
+
+//</div>

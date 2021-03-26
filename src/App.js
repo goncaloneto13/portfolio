@@ -27,7 +27,7 @@ function App() {
       <Header ScrollProj={ScrollProj} ScrollCont={ScrollCont} ScrollHome={ScrollHome} ScrollSobre={ScrollSobre} ></Header>
 
       <div className='page' ref={refHome}>
-        <Main></Main>
+        <Main ScrollCont={ScrollCont} ></Main>
       </div>
 
       <div className='page' ref={refProjetos}>
@@ -42,6 +42,7 @@ function App() {
         
       </div>
 
+  
     </div>
   );
 }
