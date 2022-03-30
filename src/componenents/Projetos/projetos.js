@@ -60,7 +60,7 @@ export default function Projetos({ ref }) {
                 <img src="https://img.shields.io/badge/Frontend-React-blue?style=flat-square&amp;link=https://reactjs.org"></img>
                 </a>
 
-                Esse projeto lala ...
+                Esse projeto ...
 
         </div >
         </div>
