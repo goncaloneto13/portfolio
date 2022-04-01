@@ -20,9 +20,9 @@ export default function Main({ScrollCont}) {
                 </span>
                
                 <h3>
-                    Aluno do último período de Ciência da Computação na UFPI, experiências com manutenção de redes e computadores dentro da universidade e programação com Python, Java, C e React.
-                    Atualmente Estagiário de TI no Ministério Público do Trabalho e realizo pesquisas na área de visão computacional.
-                    Apaixonado por novos conhecimentos e ambientes desafiadores.
+                Graduado em Ciência da Computação pela Universidade Federal do Piauí, com experiências em programação com Python, Java, C, React, SQL e experiência com as ferramentas PowerBI, Microsoft Access, Microsoft Office, Excel e Manutenção de redes e computadores.<br/>
+                Atualmente Estagiário de TI no Tribunal de Contas do Estado do Piauí e realizo pesquisas na área de visão computacional utilizando Inteligência Artificial.<br/>
+                Apaixonado por novos conhecimentos e ambientes desafiadores.
                 </h3>
                
 

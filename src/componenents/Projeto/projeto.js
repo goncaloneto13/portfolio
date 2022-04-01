@@ -2,13 +2,14 @@
 import { useState } from 'react'
 import './projeto.css'
 
-export default function Projeto({setProjeto,name,fig}){
+export default function Projeto({setProjeto,name,fig,image,info}){
 
     const [descOpen,setDescOpen] = useState(false)
 
     function showProjeto(){
         setDescOpen(true)
-        setProjeto({name: name, fig:fig})
+        setProjeto({name: name, fig:fig, image:image, info:info})
+
     }
 
     return(
