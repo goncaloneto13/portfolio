@@ -17,7 +17,6 @@ export default function Projeto({setProjeto,name,fig,image,info}){
         <div className='projeto' onClick={showProjeto}>
             <img src={fig}></img>
             <div className='name'>{name}</div>
-
         </div>
         
        

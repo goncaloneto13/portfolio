@@ -20,8 +20,8 @@ export default function Main({ScrollCont}) {
                 </span>
                
                 <h3>
-                Graduado em Ciência da Computação pela Universidade Federal do Piauí, com experiências em programação com Python, Java, C, React, SQL e experiência com as ferramentas PowerBI, Microsoft Access, Microsoft Office, Excel e Manutenção de redes e computadores.<br/>
-                Atualmente Estagiário de TI no Tribunal de Contas do Estado do Piauí e realizo pesquisas na área de visão computacional utilizando Inteligência Artificial.<br/>
+                Graduado em Ciência da Computação pela Universidade Federal do Piauí, com experiências em programação com Python, React, SQL, Django, Django REST Framework e experiência com as ferramentas PowerBI, Microsoft Access, Microsoft Office, Excel e já trabalhei com manutenção de redes e computadores. <br></br> 
+                Já realizei pesquisas com Machine Learning, para reconhecimento facial e classificação de textos, utilizando Python e a biblioteca Sklearn. Também tenho experiências de estágio no Tribunal de Contas do Estado, no Ministério Público do Trabalho, no Sebrae e dentro da universidade.  <br></br> 
                 Apaixonado por novos conhecimentos e ambientes desafiadores.
                 </h3>
                
