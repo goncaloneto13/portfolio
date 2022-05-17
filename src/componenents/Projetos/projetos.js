@@ -24,10 +24,8 @@ import Z6 from '../../assets/images/ZSSN/6.PNG'
 import Z7 from '../../assets/images/ZSSN/7.PNG'
 import Z8 from '../../assets/images/ZSSN/8.PNG'
 import Z9 from '../../assets/images/ZSSN/9.PNG'
-import tpw1 from '../../assets/images/TPW/tpw1.png'
-import tpw2 from '../../assets/images/TPW/tpw2.png'
-import tpw3 from '../../assets/images/TPW/tpw3.png'
-import tpw4 from '../../assets/images/TPW/tpw4.png'
+import avisos1 from '../../assets/images/Avisos/1.jpg'
+import avisos2 from '../../assets/images/Avisos/2.jpg'
 
 
 import ImageGallery from 'react-image-gallery';
@@ -67,10 +65,9 @@ export default function Projetos({ ref }) {
         {original: Z9, thumbnail: Z9 },
     ];
 
-    const imagesTpw = [
-        {original: tpw1, thumbnail: tpw1},
-        {original: tpw2, thumbnail: tpw2},
-        {original: tpw3, thumbnail: tpw3},    
+    const imagesAvisos = [
+        {original: avisos1, thumbnail: avisos1},
+        {original: avisos2, thumbnail: avisos2}  
     ];
 
     const infoWhats = <>
@@ -80,7 +77,7 @@ export default function Projetos({ ref }) {
                             <h3>Interface do WhatsApp Web recriada utilizando React.<br/> 
                             <br/>
                             Foi desenvolvida as funcionalidades de Login por SMS utilizando Firebase Authentication e a troca de mensagens utilizando 
-                            Cloud Firestore, podendo criar novas conversas, enviar mensagens e apagar conversas e mensagens antigas.
+                            Cloud Firestore, podendo criar novas conversas, enviar mensagens, apagar conversas e mensagens antigas.
                                 
                             "</h3>
                       </>
@@ -98,17 +95,44 @@ export default function Projetos({ ref }) {
             Auditores do Tribunal no desenvolvimento do levantamento.
             </h3>
 
-    const infoTwp = <h3>
-        Wave flee, sharks escape and get to survive... it's possible to come to an end, prove it and good luck! This game was inspired by a popular Brazilian song, 'Look, a Wave'.<br/>
+    const infoAvisos = <h3>
+     
+        No Tribunal de Contas do Estado do Piauí, realizei um levantamento sobre os avisos do setor enviados para os municípios e unidades gestoras do estado do Piauí. <br>
+        </br>
+        <br></br>
+        Cruzando informações do banco de dados de licitações e dados do banco <b>Access</b>, usando <b>PowerBI</b>, foi possível relacionar as licitações e municípios que mais tiveram avisos de irregularidades encontradas e se esses avisos foram respondidos pela prefeitura. <br></br>
+        <br></br>
+        Esse trabalho auxiliou os auditores a desbobrirem qual os municípios estão ignorando os avisos e tomar os devidos procedimentos
+        para saber o que estava acontecendo e como poderia ser solucionado esse problema. 
 
-        <h3><a href="https://globalgamejam.org/2017/games/pirate-wave-survive">https://globalgamejam.org/2017/games/pirate-wave-survive</a></h3>
 
-    </h3>        
+    </h3>
+    
+    const infoZSSN = 
+    <h3>
+        <h2> ZSSN Rede Social de Sobrevivência Zumbi </h2>
+
+        
+        
+        Sistema para compartilhar recursos entre humanos não infectados de um suposto apocalipse zumbi.
+
+        <h3>Tecnologia utilizadas: </h3>
+
+
+    <li>Python</li>
+    <li>Frameworks Django</li>
+    <li>Django Rest</li>
+    <li>Javascript (Jquery)</li>
+    <li>Banco de Dados Postgres</li>
+    <li>Ferramenta de Controle de Versões Git.</li>
+    
+   
+    </h3>  
 
     const projetos = [  { name: 'Painel de Contratos  (PowerBI)', fig: P1_c ,image: imagesP, info: infoP}, 
-                        { name: 'WhatsApp Web', fig: fig2 ,image: images, info:infoWhats},
-                        { name: 'The Pirate Wave: Survive', fig: tpw4,  image:imagesTpw, info: infoTwp},
-                        { name: 'ZSSN', fig: Z1,  image:imagesZSSN, info: infoTwp}
+                        { name: 'Painel de Avisos (PowerBI)', fig: avisos1,  image:imagesAvisos, info: infoAvisos},
+                        { name: 'WhatsApp Web (React)', fig: fig2 ,image: images, info:infoWhats},
+                        { name: 'ZSSN (Django)', fig: Z1,  image:imagesZSSN, info: infoZSSN}
                     ]
 
     const [projeto, setProjeto] = useState(projetos[0])
